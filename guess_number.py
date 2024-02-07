@@ -11,4 +11,7 @@ while True:
         print(f'The number was {number}!')
         break
     else:
-        print(f"Sorry! {guess} was not correct... PLEASE TRY AGAIN!!!1! IF YOU WISH TO EXIT TYPE q")
+        if int(guess) > number:
+            print(f"Sorry! {guess} is higher than my number... PLEASE TRY AGAIN!!!1! IF YOU WISH TO EXIT TYPE q")
+        else:
+            print(f"Sorry! {guess} is lower than my number... PLEASE TRY AGAIN!!!1! IF YOU WISH TO EXIT TYPE q")
